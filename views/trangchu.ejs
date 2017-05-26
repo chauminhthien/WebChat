@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Web Chat Thiện Xin Trai</title>
+	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" >
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+</head>
+<body>
+	<div id="login">
+		<div class="wrapper">
+			<h1>Thông Tin Cá Nhân</h1>
+			<div id="avatrUser">
+				<img src="images/avatars/luffy.jpg" alt="">
+			</div>
+			<div id="listAvatar">
+				<ul>
+					<li><img class="active" src="images/avatars/luffy.jpg" alt=""></li>
+					<li><img src="images/avatars/ace.jpg" alt=""></li>
+					<li><img src="images/avatars/chopper.jpg" alt=""></li>
+					<li><img src="images/avatars/law.jpg" alt=""></li>
+					<li><img src="images/avatars/nami.jpg" alt=""></li>
+					<li><img src="images/avatars/nuhoang.jpg" alt=""></li>
+					<li><img src="images/avatars/robin.jpg" alt=""></li>
+					<li><img src="images/avatars/sanj.jpg" alt=""></li>
+					<li><img src="images/avatars/shanks.jpg" alt=""></li>
+					<li><img src="images/avatars/usup.jpg" alt=""></li>
+					<li><img src="images/avatars/zoro.png" alt=""></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div id="infoName">
+				<div class="row">
+					<input id="name" type="text" placeholder="Nhập tên của bạn vào.......">
+					<p></p>
+				</div>
+				<div id="clickInfoName"></div>
+				
+			</div>
+		</div>
+	</div>
+	<div id="chatting">
+		<div  class="body-wrapper">	
+			<div class="room-wrapper panel">
+				<div class="panel-heading">
+					<h3>CHAT ROOM</h3>
+				</div>
+				<div class="panel-body">
+					<div class="scrollableArea">
+						<div class="scrollableAreaWrap">
+							<div class="scrollableAreaContent">
+								<ul class="message-room-list">
+									<!-- chat room -->
+									
+										
+									
+
+									<!-- end chatting room-->
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="send-message-form">
+						<div class="body-form">
+							<form id="room-form" name="room-form" action="" method="post" onsubmit="return false;">
+								<div class="textarea" style="width: 100%">
+									<!-- <textarea placeholder="Write your message..." name="room_message_content" id="room_message_content" rows="5"></textarea> -->
+
+									<input  placeholder="Write your message..." id="room_message_content" />
+									<div class="clearfix"></div>
+									<br/>
+									
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="friends-wrapper panel">
+				<div class="panel-heading">
+					<span class="auth">Hello, <span id="authName">Iker Casillas</span></span>
+					<a id="logoutBtn" class="logout" href="javascript:;">Logout</a>
+				</div>
+				<div class="panel-body">
+					<ul class="users-list" id="friendsList">
+						
+						
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Windows Chat -->
+		<div class="windows-wrapper">
+			<div class="container">
+				<div class="ChatTabsPagelet">
+					<ul class="windowsChat" id="windowsChat">
+						
+							
+
+
+
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
